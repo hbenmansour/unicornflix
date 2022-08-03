@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import GridView from '../GridView';
 // Insert Location 7
-
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
 
 function App() {
   return (
@@ -15,4 +16,4 @@ function App() {
 }
 
 // Insert Location 8
-export default App;
+export default withAuthenticator(App);
